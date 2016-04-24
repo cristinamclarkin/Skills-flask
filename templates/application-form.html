@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %}Application Form{% endblock %}
+
+{% block content %}
+    <h1>Prospective Employment Application Form</h1>
+    <p>We are so excited that you are seeking employment with our company! <br>
+    <br>
+    Before we progress, please supply the following information about yourself:</p>
+    <form action='/application-response' method="post" id="job-form">
+        <div>
+        <label for='firsname'>First Name:</label>
+        <input type='text' name='field-firstname' id='firstname'><br>
+        </div><br>
+        <div>
+        <label for='lastname'>Last Name:</label>
+        <input type='text' name='field-lastname' id='lastname' class='lastname1'><br>
+        </div><br>
+        <div>
+        <label for='SalaryRequirement'>Salary Requirement:</label>
+        <input type='text' name='field-SalaryRequirement' id='SalaryRequirement'><br>
+        </div><br>
+
+
+        <div>
+        <legend>Please select the position for which you will be applying:</legend><br>
+            <select name='job' id='job'>
+                <option value='Software Engineer'>Software Engineer</option>
+                <option value='QA Engineer'>QA Engineer</option>
+                <option value='Product Manager'>Product Manager</option>
+            </select><br>
+        </div>
+        <br>
+        <button>Submit</button>
+    </form>
+{% endblock %}

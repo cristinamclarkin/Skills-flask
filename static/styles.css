@@ -1,0 +1,19 @@
+input[type=text] {
+    background-color: yellow;
+    color: black;
+}
+
+
+.lastname1 {
+    font-weight: bold;
+}
+
+p {
+    border: 3px solid black;
+    width: 40%;
+}
+
+div {
+    border: 1px solid black;
+    width: 40%;
+}
